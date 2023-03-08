@@ -57,6 +57,7 @@ body {
 }
 
 .menu-button {
+    transition: 0.16s;
     bottom: 0px;
     width: var(--icon_width);
     margin-top: 10px;
@@ -66,6 +67,7 @@ body {
 }
 
 .menu-button:hover {
+    transition: 0.16s;
     filter: invert(51%) sepia(15%) saturate(1293%) hue-rotate(292deg) brightness(92%) contrast(82%);
 }
 
@@ -114,6 +116,17 @@ body {
     font-family: SF-Bold;
     color: white;
     cursor: default;
+}
+
+.desc-link {
+    transition: 0.16s;
+    text-decoration: none;
+    color: white;
+}
+
+.desc-link:hover {
+    transition: 0.16s;
+    color: #b86a80;
 }
 
 /*Smaller Screens*/
