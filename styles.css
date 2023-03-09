@@ -159,10 +159,15 @@ footer {
 
 @media (max-width: 300px) {
     .vertical-menu {
+        transition: 1s;
         min-width: 20%;
     }
 
     .header-div {
+        margin-left: 25%;
+    }
+
+    .desc-div {
         margin-left: 25%;
     }
 }
@@ -174,6 +179,10 @@ footer {
     }
 
     .header-div {
+        margin-left: 20%;
+    }
+
+    .desc-div {
         margin-left: 20%;
     }
 }
