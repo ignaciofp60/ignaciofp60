@@ -42,7 +42,7 @@ body {
     bottom: 0;
     top: 0;
 }
-
+/*Logo*/
 .vertical-menu-logo {
     width: 80%;
     margin-top: 10px;
@@ -51,11 +51,19 @@ body {
     transform: translate(-50%);
 }
 
+/*Middle navbar*/
+.vertical-menu-general{
+    position: absolute;
+    bottom: 50%;
+}
+
+/*Bottom navbar*/
 .vertical-menu-content {
     position: absolute;
     bottom: 10px;
 }
 
+/*Buttons*/
 .menu-button {
     transition: 0.16s;
     bottom: 0px;

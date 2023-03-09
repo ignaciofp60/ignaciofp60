@@ -13,6 +13,7 @@
 
 <body>
     <nav class="vertical-menu">
+        <!--Logo-->
         <div class="vertical-menu-logo">
             <svg stroke="currentColor" fill="#b86a80" stroke-width="0" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
@@ -21,20 +22,33 @@
                 </path>
             </svg>
         </div>
+
+        <!--Vertical navbar-->
+        <nav class="vertical-menu-general">
+            <!--Projects-->
+            <a href="./projects/index.html"><svg class="menu-button personal" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="white"
+                        d="M595.2 128H320a192 192 0 0 0-192 192v576h384V352c0-90.496 32.448-171.2 83.2-224zM736 64c123.712 0 224 128.96 224 288S859.712 640 736 640H576v320H64V320A256 256 0 0 1 320 64h416zM576 352v224h160c84.352 0 160-97.28 160-224s-75.648-224-160-224-160 97.28-160 224z" />
+                    <path fill="white"
+                        d="M736 448c-35.328 0-64-43.008-64-96s28.672-96 64-96 64 43.008 64 96-28.672 96-64 96z" />
+                </svg></a>
+        </nav>
+
+        <!--Bottom navbar-->
         <nav class="vertical-menu-content">
             <!--Coffe icon-->
             <div class="pure-menu-item pure-menu-has-children
                    pure-menu-allow-hover" style="list-style-type: none;">
-		    <a href="https://revolut.me/ignaciyu00"><svg class="menu-button coffee" stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    style="--darkreader-inline-fill: currentColor; --darkreader-inline-stroke: currentColor;"
-                    data-darkreader-inline-fill="" data-darkreader-inline-stroke="">
-                    <g id="Coffee_Bean" dataName="Coffee Bean">
-                        <path
-                            d="M19.151,4.868a6.744,6.744,0,0,0-5.96-1.69,12.009,12.009,0,0,0-6.54,3.47,11.988,11.988,0,0,0-3.48,6.55,6.744,6.744,0,0,0,1.69,5.95,6.406,6.406,0,0,0,4.63,1.78,11.511,11.511,0,0,0,7.87-3.56C21.3,13.428,22.1,7.818,19.151,4.868Zm-14.99,8.48a11.041,11.041,0,0,1,3.19-5.99,10.976,10.976,0,0,1,5.99-3.19,8.016,8.016,0,0,1,1.18-.09,5.412,5.412,0,0,1,3.92,1.49.689.689,0,0,1,.11.13,6.542,6.542,0,0,1-2.12,1.23,7.666,7.666,0,0,0-2.96,1.93,7.666,7.666,0,0,0-1.93,2.96,6.589,6.589,0,0,1-1.71,2.63,6.7,6.7,0,0,1-2.63,1.71,7.478,7.478,0,0,0-2.35,1.36A6.18,6.18,0,0,1,4.161,13.348Zm12.49,3.31c-3.55,3.55-8.52,4.35-11.08,1.79a1.538,1.538,0,0,1-.12-.13,6.677,6.677,0,0,1,2.13-1.23,7.862,7.862,0,0,0,2.96-1.93,7.738,7.738,0,0,0,1.93-2.96,6.589,6.589,0,0,1,1.71-2.63,6.589,6.589,0,0,1,2.63-1.71,7.6,7.6,0,0,0,2.34-1.37C20.791,9.2,19.821,13.488,16.651,16.658Z">
-                        </path>
-                    </g>
-			    </svg></a>
+                <a href="https://revolut.me/ignaciyu00"><svg class="menu-button coffee" stroke="currentColor"
+                        fill="white" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        style="--darkreader-inline-fill: currentColor; --darkreader-inline-stroke: currentColor;"
+                        data-darkreader-inline-fill="" data-darkreader-inline-stroke="">
+                        <g id="Coffee_Bean" dataName="Coffee Bean">
+                            <path
+                                d="M19.151,4.868a6.744,6.744,0,0,0-5.96-1.69,12.009,12.009,0,0,0-6.54,3.47,11.988,11.988,0,0,0-3.48,6.55,6.744,6.744,0,0,0,1.69,5.95,6.406,6.406,0,0,0,4.63,1.78,11.511,11.511,0,0,0,7.87-3.56C21.3,13.428,22.1,7.818,19.151,4.868Zm-14.99,8.48a11.041,11.041,0,0,1,3.19-5.99,10.976,10.976,0,0,1,5.99-3.19,8.016,8.016,0,0,1,1.18-.09,5.412,5.412,0,0,1,3.92,1.49.689.689,0,0,1,.11.13,6.542,6.542,0,0,1-2.12,1.23,7.666,7.666,0,0,0-2.96,1.93,7.666,7.666,0,0,0-1.93,2.96,6.589,6.589,0,0,1-1.71,2.63,6.7,6.7,0,0,1-2.63,1.71,7.478,7.478,0,0,0-2.35,1.36A6.18,6.18,0,0,1,4.161,13.348Zm12.49,3.31c-3.55,3.55-8.52,4.35-11.08,1.79a1.538,1.538,0,0,1-.12-.13,6.677,6.677,0,0,1,2.13-1.23,7.862,7.862,0,0,0,2.96-1.93,7.738,7.738,0,0,0,1.93-2.96,6.589,6.589,0,0,1,1.71-2.63,6.589,6.589,0,0,1,2.63-1.71,7.6,7.6,0,0,0,2.34-1.37C20.791,9.2,19.821,13.488,16.651,16.658Z">
+                            </path>
+                        </g>
+                    </svg></a>
                 <!--SUBMENUS-->
                 <div class="pure-menu-children">
                     <label class="flyout-menu">This button is only because I like coffee. :)</label>
@@ -50,8 +64,8 @@
                     </path>
                 </svg></a>
             <!--LinkeIn icon-->
-            <a href="https://www.linkedin.com/in/ignaciofprieto" target="_blank"><svg
-                    class="menu-button" stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 1024 1024"
+            <a href="https://www.linkedin.com/in/ignaciofprieto" target="_blank"><svg class="menu-button"
+                    stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 1024 1024"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M997.795 1002.43H789.769c-14.715 0-26.607-11.892-26.607-26.607V640.806c0-114.898-59.263-114.898-78.816-114.898-52.611 0-74.986 41.525-82.243 59.466-3.427 8.064-5.04 21.77-5.04 40.921v349.732c0 14.715-11.892 26.607-26.606 26.607H362.23c-7.055 0-13.909-2.822-18.948-7.86s-7.861-11.895-7.66-18.95c0-5.643 2.822-567.432 0-624.881-.403-7.257 2.217-14.312 7.257-19.553s11.893-8.265 19.35-8.265h208.228c14.714 0 26.607 11.892 26.607 26.607v15.723c35.074-31.244 85.669-57.046 161.058-57.046 166.702 0 266.28 115.3 266.28 308.409v359.005c0 14.715-11.893 26.607-26.607 26.607zm-181.418-53.214l155.012-.004V616.815c0-162.268-77.606-255.193-213.065-255.193-90.507 0-134.45 45.153-162.066 86.476-3.225 10.885-13.506 18.949-25.6 18.949h-1.41c-9.677 0-18.546-5.242-23.181-13.707-3.628-6.653-4.435-14.313-2.016-21.368v-55.835H389.443c1.411 111.068 0 470.477-.403 572.877h154.809V626.09c0-26.809 2.822-46.16 8.869-60.875 23.383-57.852 72.566-92.724 131.427-92.724 83.855 0 132.03 61.28 132.03 168.113v308.611h.204zm-569.246 53.21H38.904c-14.715 0-26.607-11.892-26.607-26.607V349.73c0-14.715 11.892-26.608 26.607-26.608h208.227c14.715 0 26.607 11.893 26.607 26.607V975.82c0 14.715-11.892 26.608-26.607 26.608zM65.513 949.213h155.01V376.336H65.514v572.876zm77.605-658.344l-1.412-.001c-82.041 0-141.707-56.844-141.707-135.055 0-78.009 60.674-134.854 144.529-134.854 82.444 0 141.305 55.231 142.918 134.249 0 78.816-60.674 135.66-144.328 135.66zm1.41-216.492c-54.627 0-91.313 32.857-91.313 81.639 0 47.974 36.284 81.637 88.492 81.637h1.41c54.426 0 91.112-32.857 91.112-81.638-1.008-49.386-36.283-81.638-89.701-81.638z">
@@ -68,10 +82,12 @@
         <h1 class="header-text">.</h1>
     </header>
     <section class="desc-div">
-        <p class="desc-text">Hi, I'm Ignacio Fernández.<br>I'm currently studying app development<br>Let's pretend that this is a Lorem ipsum dolor sit amet
-        <br>
-        <br>
-        <a class="desc-link" href="./projects/index.html">Discover my projects...</a></p>
+        <p class="desc-text">Hi, I'm Ignacio Fernández.<br>I'm currently studying app development<br>Let's pretend that
+            this is a Lorem ipsum dolor sit amet
+            <br>
+            <br>
+            <a class="desc-link" href="./projects/index.html">Discover my projects...</a>
+        </p>
     </section>
 </body>
 
