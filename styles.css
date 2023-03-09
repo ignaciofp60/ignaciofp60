@@ -154,7 +154,7 @@ footer {
     right: 0px;
     background-color: #fff;
     width: 96%;
-    max-width: calc(100vw-60px);;
+    max-width: calc(100%-60px);
 }
 
 /*Smaller Screens*/
