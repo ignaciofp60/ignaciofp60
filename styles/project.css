@@ -24,7 +24,6 @@ article h4 {
     padding-top: 16px;
     padding-left: 22px;
     font-size: 24px;
-    font-weight: ;
     color: #b86a80;
 }
 
@@ -43,5 +42,6 @@ article h6 {
 }
 
 article img {
+    padding-left: 1em;
     width: 7em;
 }
