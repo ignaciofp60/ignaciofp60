@@ -11,6 +11,7 @@ article {
     justify-content: center;
     margin-left: 6em;
     margin-right: 6em;
+    margin-bottom: 4em;
 
     background: linear-gradient(to left top,#0c1724, #293052);
     border-radius: 0.5em;
@@ -23,6 +24,8 @@ article h4 {
     padding-top: 16px;
     padding-left: 22px;
     font-size: 24px;
+    font-weight: ;
+    color: #b86a80;
 }
 
 article h5 {
