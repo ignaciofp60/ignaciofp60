@@ -152,7 +152,25 @@ footer {
     bottom: 0em;
     left: 3.75em;
     right: 0em;
-    background-color: #fff;
+    background-color: #050505;
+    height: 3.3em;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    padding-top: 0.5em;
+
+    font-family: SF-Regular;
+    font-size: 10px;
+    color: gray;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: grey;
 }
 
 /*Smaller Screens*/
