@@ -45,8 +45,6 @@ body {
     z-index: 5;
 }
 
-
-
 /*Logo*/
 .vertical-menu-logo {
     width: 80%;
@@ -81,6 +79,10 @@ body {
 
 .menu-button:hover {
     transition: 0.16s;
+    filter: invert(51%) sepia(15%) saturate(1293%) hue-rotate(292deg) brightness(92%) contrast(82%);
+}
+
+.button-active {
     filter: invert(51%) sepia(15%) saturate(1293%) hue-rotate(292deg) brightness(92%) contrast(82%);
 }
 
