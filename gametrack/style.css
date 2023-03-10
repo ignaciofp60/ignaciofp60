@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    background-color: #0C0A0D;
+}
+
+.alert-icon {
+    display: flex;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+p {
+    color: white;
+}

@@ -96,10 +96,11 @@ body {
 
 /*Header*/
 .header-div {
-    display: flex;
+    display: inline-block;
     margin-top: 15%;
     margin-left: 12%;
     font-size: 0;
+    clear: both;
 }
 
 .header-text {
