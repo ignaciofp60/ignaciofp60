@@ -181,6 +181,10 @@ footer {
     color: grey;
 }
 
+th {
+    cursor: default;
+}
+
 /*Smaller Screens*/
 
 @media (max-width: 400px) {
