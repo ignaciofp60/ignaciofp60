@@ -95,6 +95,7 @@ body {
 }
 
 /*Header*/
+
 .header-div {
     display: inline-block;
     margin-top: 15%;
@@ -102,7 +103,6 @@ body {
     font-size: 0;
     clear: both;
 }
-
 .header-text {
     transition: 0.26s;
     font-family: SF-Bold;
@@ -115,6 +115,24 @@ body {
     transition: 0.16s;
     color: #b86a80;
     transform: scale(1.2);
+}
+
+
+.header-text1 {
+    transition: 0.26s !important;
+    font-family: SF-Bold !important;
+    color: white !important;
+    cursor: default !important;
+    font-size: xx-large !important;
+}
+
+.header-text1:hover {
+    transition: 0.16s !important;
+    color: #b86a80 !important;
+    transform: scale(1.2) !important;
+}
+span {
+    margin-left: auto;
 }
 
 /*Desciption*/
@@ -176,7 +194,7 @@ footer {
 
 /*Smaller Screens*/
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
     .vertical-menu {
         transition: 1s;
         min-width: 20%;
@@ -188,6 +206,10 @@ footer {
 
     .desc-div {
         margin-left: 25%;
+    }
+    
+    footer {
+        left: 20%;
     }
 }
 
@@ -203,5 +225,9 @@ footer {
 
     .desc-div {
         margin-left: 20%;
+    }
+
+    footer {
+        left: 15%;
     }
 }
