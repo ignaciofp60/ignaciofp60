@@ -14,11 +14,9 @@
 }
 
 body {
+    display: grid;
     /*Previous: #343434*/
     background-color: #0C0A0D;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
     scroll-behavior: smooth;
 }
 
@@ -30,18 +28,16 @@ body {
   lightgray: #343434
   lightergray: #515151
   Añadir transparencia: añadir dos cifras al final del cod rgb
-  */
+*/
 
 /*Vertical menu*/
 .vertical-menu {
     transition: 1s;
     /*Previous: #282828*/
     background-color: #0F0D10;
-    position: fixed;
+    position: absolute;
     width: var(--v_bar_width);
-    bottom: 0;
-    top: 0;
-    margin-right: 100%;
+    height: 100vh;
     z-index: 5;
 }
 
@@ -158,7 +154,7 @@ body {
 footer {
     position: absolute;
     bottom: 0em;
-    left: 3.75em;
+    left: var(--v_bar_width);
     right: 0em;
     background-color: #050505;
     height: 3.3em;
