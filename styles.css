@@ -41,7 +41,11 @@ body {
     width: var(--v_bar_width);
     bottom: 0;
     top: 0;
+    margin-right: 100%;
+    z-index: 5;
 }
+
+
 
 /*Logo*/
 .vertical-menu-logo {
@@ -104,6 +108,7 @@ body {
     clear: both;
 }
 .header-text {
+    display: inline-block;
     transition: 0.26s;
     font-family: SF-Bold;
     color: white;
@@ -115,24 +120,6 @@ body {
     transition: 0.16s;
     color: #b86a80;
     transform: scale(1.2);
-}
-
-
-.header-text1 {
-    transition: 0.26s !important;
-    font-family: SF-Bold !important;
-    color: white !important;
-    cursor: default !important;
-    font-size: xx-large !important;
-}
-
-.header-text1:hover {
-    transition: 0.16s !important;
-    color: #b86a80 !important;
-    transform: scale(1.2) !important;
-}
-span {
-    margin-left: auto;
 }
 
 /*Desciption*/
