@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./../styles/contact.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
         integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-    <link rel="icon" href="./favicon.ico" type="image/jpg">
+    <link rel="icon" href="./../favicon.ico" type="image/jpg">
 </head>
 
 <body>
@@ -104,7 +104,7 @@
         <h1>Contact</h1>
     </header>
 
-    <form id="contact" method="post" action="./cap.php">
+    <form id="contact" method="post" action="">
         <fieldset>
             <div class="label-container">
                 <label for="email">Sender: <input type="email" name="email" placeholder="someone@example.com"
@@ -115,7 +115,7 @@
 
                 <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'
                     data-action='submit' type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                    
+                    <input type="hidden" id="token" name="token"> 
                 <div>
                     <p class="success">
                         <?php echo $success;  ?>
