@@ -104,16 +104,26 @@
         <h1>Contact</h1>
     </header>
 
-    <form method="post" action="./cap.php">
+    <form id="contact" method="post" action="./cap.php">
         <fieldset>
             <div class="label-container">
-                <label for="remit">Sender: <input type="email" placeholder="someone@example.com" id="remit"></label>
-                <label for="asunto">Asunto: <input type="text" placeholder="Text example" id="asunto"></label>
-                <label for="msg">Mensaje: <textarea id="msg"></textarea></label>
+                <label for="email">Sender: <input type="email" name="email" placeholder="someone@example.com"
+                        id="email"></label>
+                <label for="subject">subject: <input type="text" placeholder="Text example" id="subject"
+                        name="subject"></label>
+                <label for="msg">Message: <textarea id="msg" name="message"></textarea></label>
 
                 <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'
-                    data-action='submit'>Submit</button>
-
+                    data-action='submit' type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    
+                <div>
+                    <p class="success">
+                        <?php echo $success;  ?>
+                    </p>
+                    <p class="failed">
+                        <?php echo $failed;  ?>
+                    </p>
+                </div>
             </div>
             <div class="right-side">
                 <div class="ul-container">
