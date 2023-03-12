@@ -1,0 +1,95 @@
+header {
+    margin-left: 6em;
+    margin-right: 6em;
+    color: white;
+}
+
+form {
+    justify-self: center;
+
+    margin-left: 6em;
+    margin-right: 6em;
+    font-family: SF-Regular;
+}
+
+form fieldset {
+    display: grid;
+
+    border-radius: 1em;
+    width: 40vw;
+    height: 40vh;
+}
+
+.label-container {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.right-side {
+    grid-column: 2;
+    display: flex;
+    background-color: #b86a80;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+.ul-container {
+    align-self: center;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.ul-container ul {
+    margin-left: 50%;
+    transform: translate(-50%);
+
+    list-style-type: disc;
+    max-width: 50%;
+}
+
+.ul-container li {
+    margin-top: 35px;
+}
+
+form label {
+    display: inherit;
+    flex-direction: column;
+
+    width: 30em;
+    
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+form label,
+textarea {
+    color: white;
+}
+
+form label input,
+textarea {
+    background-color: #223;
+    border-radius: 1em;
+}
+
+form label textarea {
+    height: 100px;
+}
+
+.g-recaptcha {
+    margin-left: 50%;
+    transform: translate(-50%);
+
+    background-color: #223;
+    color: white;
+
+    margin-top: 2em;
+    width: 8em;
+}

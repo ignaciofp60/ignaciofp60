@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="./../styles.css">
-    <link rel="stylesheet" href="./../styles/project.css">
+    <link rel="stylesheet" href="./../styles/contact.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
         integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <link rel="icon" href="./favicon.ico" type="image/jpg">
@@ -39,8 +39,8 @@
             </a>
             <!--Projects-->
             <a href="">
-                <svg class="menu-button button-active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                    stroke-width="1" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="menu-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1"
+                    stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z"></path>
                     <path d="M15 3v4a1 1 0 0 0 1 1h4"></path>
                     <path d="M18 17h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h4l5 5v7a2 2 0 0 1 -2 2z"></path>
@@ -49,8 +49,8 @@
             </a>
             <!--Contact-->
             <a href="./../contact/index.html">
-                <svg class="menu-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1"
-                    stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="menu-button button-active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    stroke-width="1" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"></path>
                     <path d="M10 16h6"></path>
@@ -101,52 +101,30 @@
 
     <!--Header-->
     <header>
-        <h1>Personal Projects</h1>
+        <h1>Contact</h1>
     </header>
 
-    <article class="project-container">
-        <div class="text-icon-container">
-            <h4>GameTrack</h4>
-            <h5>Track all your game's<br> progress in a web-app!</h5>
-            <section class="project-text">
-                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar a libero sed convallis. Duis
-                    aliquam libero ut consectetur sodales.</h6>
-                <img src="https://img.freepik.com/iconos-gratis/consola-juego_318-346931.jpg"
-                    style="transform: translateY(-1.4em);">
-            </section>
-        </div>
+    <form>
+        <fieldset>
+            <div class="label-container">
+                <label for="remit">Sender: <input type="email" placeholder="someone@example.com" id="remit"></label>
+                <label for="asunto">Asunto: <input type="text" placeholder="Text example" id="asunto"></label>
+                <label for="msg">Mensaje: <textarea id="msg"></textarea></label>
 
-        <div class="pic-container">
-            <img src="https://www.lego.com/cdn/cs/set/assets/bltd2f05a06e76ab754/10306_alt2.png">
-        </div>
-    </article>
+                <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'
+                    data-action='submit'>Submit</button>
 
-    <article class="project-container">
-        <div class="text-icon-container">
-            <h4>Fuel Consumption Calc</h4>
-            <h5>Keep your vehicle consumption<br>as low as possible</h5>
-            <section class="project-text">
-                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar a libero sed convallis. Duis
-                    aliquam libero ut consectetur sodales.</h6>
-            </section>
-        </div>
-
-        <div class="pic-container">
-            <img
-                src="https://www.elsbett.com/WebRoot/Store2/Shops/63102114/4E00/7671/925D/AB7C/2B1E/C0A8/28BD/1D99/E30.png">
-        </div>
-    </article>
-    <!--<article class="project-container">
-        <h4>Fuel Consumption Calc</h4>
-        <h5>Keep your vehicle consumption<br>as low as possible</h5>
-        <section class="project-text">
-            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar a libero sed convallis. Duis
-                aliquam libero ut consectetur sodales.</h6>
-            <aside class="project-img"><img
-                    src="https://www.elsbett.com/WebRoot/Store2/Shops/63102114/4E00/7671/925D/AB7C/2B1E/C0A8/28BD/1D99/E30.png">
-            </aside>
-        </section>
-    </article>-->
+            </div>
+            <div class="right-side">
+                <div class="ul-container">
+                    <ul>
+                        <li>The sender must be a valid email address</li>
+                        <li>The subject line and the message must not contain offensive messages</li>
+                    </ul>
+                </div>
+            </div>
+        </fieldset>
+    </form>
 
     <footer>
         <div class="table-container">
@@ -166,3 +144,13 @@
 </body>
 
 </html>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LdUoPQkAAAAAPufXeLs7CukmtBVS5pImeLR9rNt"></script>
+
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute("6LdUoPQkAAAAAPufXeLs7CukmtBVS5pImeLR9rNt", { action: "homepage" }).then(function (token) {
+            document.getElementById("token").value = token;
+        });
+    });
+</script>
