@@ -33,4 +33,5 @@ function sendEmail($email){
     //https://eecs.blog/php-sending-emails/
     //Also check out this post on sanitizing your input data.
     //https://eecs.blog/php-string-sanitization/
-}
+} 
+?>
